@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ابروان (AbrOne) | زیرساخت ابری و سرورهای نسل جدید</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <style>
+        body { font-family: 'Vazirmatn', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- نوار بازگشت به پورتفولیو -->
+    <div class="bg-indigo-950/60 border-b border-indigo-500/30 px-6 py-2.5 text-xs flex justify-between items-center text-indigo-200">
+        <span>در حال مشاهده پیش‌نمایش زنده: <strong>پروژه لندینگ‌پیج سرویس ابری</strong> (طراحی شده توسط امیرحسین رحمتی)</span>
+        <a href="../../index.html" class="bg-indigo-600 hover:bg-indigo-500 text-white px-3 py-1 rounded-md transition font-medium">
+            ← بازگشت به رزومه اصلی
+        </a>
+    </div>
+
+    <!-- هدر -->
+    <header class="bg-slate-900/80 backdrop-blur sticky top-0 z-40 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-8">
+                <span class="text-2xl font-black bg-gradient-to-l from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+                    ابرْوان<span class="text-indigo-500">.</span>
+                </span>
+                <nav class="hidden md:flex gap-6 text-sm text-slate-300">
+                    <a href="#features" class="hover:text-indigo-400 transition">ویژگی‌ها</a>
+                    <a href="#pricing" class="hover:text-indigo-400 transition">تعرفه‌ها</a>
+                    <a href="#testimonials" class="hover:text-indigo-400 transition">نظرات مشتریان</a>
+                    <a href="#booking" class="hover:text-indigo-400 transition">رزرو مشاوره</a>
+                </nav>
+            </div>
+            <a href="#booking" class="px-4 py-2 text-sm bg-indigo-600 hover:bg-indigo-500 text-white font-medium rounded-xl shadow-lg shadow-indigo-600/20 transition">
+                شروع رایگان
+            </a>
+        </div>
+    </header>
+
+    <!-- بخش قهرمان (Hero Section) با تصویر داشبورد -->
+    <section class="max-w-6xl mx-auto px-6 py-16 md:py-24 flex flex-col md:flex-row items-center gap-12">
+        <div class="md:w-1/2 space-y-6 text-center md:text-right">
+            <div class="inline-flex items-center gap-2 px-3 py-1 text-xs font-medium bg-indigo-500/10 text-indigo-400 rounded-full border border-indigo-500/20">
+                <span class="w-2 h-2 rounded-full bg-indigo-400 animate-ping"></span>
+                آپتایم ۹۹.۹۹٪ تضمین‌شده در دیتاسنترهای داخلی و خارجی
+            </div>
+            <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">
+                میزبانی ابری سریع و امن برای <span class="text-indigo-400">کسب‌وکارهای مدرن</span>
+            </h1>
+            <p class="text-slate-400 text-base md:text-lg leading-relaxed">
+                بدون دغدغه زیرساخت، اپلیکیشن‌های Laravel و وب‌سایت‌های پرترافیک خود را در کمتر از ۶۰ ثانیه روی سرورهای ابری با دیسک NVMe مستقر کنید.
+            </p>
+            <div class="flex flex-wrap gap-4 justify-center md:justify-start pt-2">
+                <a href="#pricing" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-medium rounded-xl shadow-lg shadow-indigo-600/30 transition">
+                    مشاهده پلن‌ها و قیمت
+                </a>
+                <a href="#booking" class="px-6 py-3 bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 font-medium rounded-xl transition">
+                    درخواست دمو و مشاوره
+                </a>
+            </div>
+        </div>
+        <div class="md:w-1/2">
+            <div class="relative rounded-2xl p-2 bg-gradient-to-tr from-indigo-500/30 via-purple-500/20 to-transparent border border-slate-800 shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=80" alt="داشبورد مدیریت سرور ابری" class="rounded-xl w-full object-cover">
+                <div class="absolute -bottom-5 -right-5 bg-slate-900 border border-slate-700 p-4 rounded-xl shadow-xl hidden md:flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold">✓</div>
+                    <div>
+                        <div class="text-xs text-slate-400">سرعت پاسخگویی سرور</div>
+                        <div class="text-sm font-bold text-white">۱۲ میلی‌ثانیه (فوق‌سریع)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش ویژگی‌ها -->
+    <section id="features" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-900">
+        <div class="text-center mb-12">
+            <h2 class="text-2xl md:text-3xl font-bold">چرا تیم‌های فنی ابروان را انتخاب می‌کنند؟</h2>
+            <p class="text-slate-400 text-sm mt-2">زیرساختی که همزمان با رشد ترافیک شما مقیاس‌پذیر می‌شود</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-slate-900/70 border border-slate-800 p-6 rounded-2xl hover:border-indigo-500/40 transition">
+                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl font-bold mb-4">⚡</div>
+                <h3 class="text-lg font-bold mb-2">سخت‌افزار نسل جدید NVMe</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">استفاده از پردازنده‌های سری EPYC و حافظه‌های پرسرعت برای اجرای بدون تاخیر کوئری‌های سنگین دیتابیس.</p>
+            </div>
+            <div class="bg-slate-900/70 border border-slate-800 p-6 rounded-2xl hover:border-indigo-500/40 transition">
+                <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl font-bold mb-4">🛡️</div>
+                <h3 class="text-lg font-bold mb-2">حفاظت پیشرفته Anti-DDoS</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">فایروال ابری هوشمند و لایه‌های امنیتی چندگانه برای جلوگیری از حملات سایبری و حفظ پایداری سرویس.</p>
+            </div>
+            <div class="bg-slate-900/70 border border-slate-800 p-6 rounded-2xl hover:border-indigo-500/40 transition">
+                <div class="w-12 h-12 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center text-xl font-bold mb-4">🔄</div>
+                <h3 class="text-lg font-bold mb-2">بکاپ‌گیری خودکار روزانه</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">تهیه نسخه پشتیبان منظم در ۳ موقعیت جغرافیایی مختلف با قابلیت بازگردانی اطلاعات تنها با یک کلیک.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش جدول تعرفه‌ها (Pricing) با سوییچ ماهانه/سالانه -->
+    <section id="pricing" class="max-w-6xl mx-auto px-6 py-16">
+        <div class="text-center mb-10 space-y-4">
+            <h2 class="text-2xl md:text-3xl font-bold">تعرفه‌های شفاف و مقرون‌به‌صرفه</h2>
+            <p class="text-slate-400 text-sm">با انتخاب پرداخت سالانه، ۲۰٪ تخفیف ویژه دریافت کنید</p>
+            
+            <!-- دکمه تغییر ماهانه / سالانه -->
+            <div class="inline-flex items-center bg-slate-900 p-1.5 rounded-xl border border-slate-800 mt-4">
+                <button id="btn-monthly" onclick="setBilling('monthly')" class="px-5 py-2 rounded-lg text-xs font-bold bg-indigo-600 text-white transition">پرداخت ماهانه</button>
+                <button id="btn-yearly" onclick="setBilling('yearly')" class="px-5 py-2 rounded-lg text-xs font-bold text-slate-400 hover:text-white transition">پرداخت سالانه (۲۰٪ تخفیف)</button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            <!-- پلن پایه -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-6">
+                <div>
+                    <h3 class="text-lg font-bold">پلن استارتاپ</h3>
+                    <p class="text-xs text-slate-400 mt-1">مناسب برای سایت‌های نوپا و شخصی</p>
+                </div>
+                <div class="flex items-baseline gap-1">
+                    <span id="price-1" class="text-3xl font-extrabold text-white">۲۹۰,۰۰۰</span>
+                    <span class="text-xs text-slate-400">تومان / ماهانه</span>
+                </div>
+                <ul class="space-y-3 text-sm text-slate-300 border-t border-slate-800 pt-6">
+                    <li>✓ ۲ هسته پردازنده ابری</li>
+                    <li>✓ ۴ گیگابایت رم اختصاصی</li>
+                    <li>✓ ۵۰ گیگابایت حافظه NVMe</li>
+                    <li>✓ ترافیک ماهانه نامحدود</li>
+                </ul>
+                <a href="#booking" class="block w-full py-2.5 text-center bg-slate-800 hover:bg-slate-700 rounded-xl text-sm font-medium transition">انتخاب پلن استارتاپ</a>
+            </div>
+
+            <!-- پلن حرفه‌ای (پیشنهادی) -->
+            <div class="bg-slate-900 border-2 border-indigo-500 rounded-2xl p-8 space-y-6 relative shadow-2xl shadow-indigo-500/10">
+                <span class="absolute -top-3.5 left-6 bg-indigo-500 text-white text-xs px-3 py-1 rounded-full font-bold">پرفروش‌ترین</span>
+                <div>
+                    <h3 class="text-xl font-bold text-indigo-400">پلن تجاری پرو</h3>
+                    <p class="text-xs text-slate-400 mt-1">مناسب برای فروشگاه‌ها و سامانه‌های پرترافیک</p>
+                </div>
+                <div class="flex items-baseline gap-1">
+                    <span id="price-2" class="text-4xl font-extrabold text-white">۶۵۰,۰۰۰</span>
+                    <span class="text-xs text-slate-400">تومان / ماهانه</span>
+                </div>
+                <ul class="space-y-3 text-sm text-slate-300 border-t border-slate-800 pt-6">
+                    <li>✓ ۴ هسته پردازنده ابری</li>
+                    <li>✓ ۸ گیگابایت رم اختصاصی</li>
+                    <li>✓ ۱۲۰ گیگابایت حافظه NVMe</li>
+                    <li>✓ بکاپ خودکار روزانه + SSL رایگان</li>
+                </ul>
+                <a href="#booking" class="block w-full py-3 text-center bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl text-sm font-bold shadow-lg shadow-indigo-600/30 transition">سفارش پلن حرفه‌ای</a>
+            </div>
+
+            <!-- پلن سازمانی -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 space-y-6">
+                <div>
+                    <h3 class="text-lg font-bold">پلن سازمانی VIP</h3>
+                    <p class="text-xs text-slate-400 mt-1">منابع اختصاصی برای سازمان‌های بزرگ</p>
+                </div>
+                <div class="flex items-baseline gap-1">
+                    <span id="price-3" class="text-3xl font-extrabold text-white">۱,۴۰۰,۰۰۰</span>
+                    <span class="text-xs text-slate-400">تومان / ماهانه</span>
+                </div>
+                <ul class="space-y-3 text-sm text-slate-300 border-t border-slate-800 pt-6">
+                    <li>✓ ۸ هسته پردازنده ابری</li>
+                    <li>✓ ۱۶ گیگابایت رم اختصاصی</li>
+                    <li>✓ ۲۵۰ گیگابایت حافظه NVMe</li>
+                    <li>✓ مدیر سرور اختصاصی ۲۴/۷</li>
+                </ul>
+                <a href="#booking" class="block w-full py-2.5 text-center bg-slate-800 hover:bg-slate-700 rounded-xl text-sm font-medium transition">انتخاب پلن سازمانی</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- بخش نظرات مشتریان (اصلاح‌شده و تضمینی) -->
+    <section id="testimonials" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-900">
+        <div class="text-center mb-12 space-y-2">
+            <span class="text-xs font-bold text-indigo-400 bg-indigo-500/10 px-3 py-1 rounded-full border border-indigo-500/20">
+                رضایت ۹۸ درصدی مشتریان
+            </span>
+            <h2 class="text-2xl md:text-3xl font-bold text-white">تجربه مدیران فنی از همکاری با ما</h2>
+            <p class="text-slate-400 text-sm">بیش از ۵۰۰ استارتاپ و شرکت ایرانی زیرساخت خود را به ابروان سپرده‌اند</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <!-- نظر ۱ -->
+            <div class="bg-slate-900 border border-slate-700/80 p-6 rounded-2xl flex flex-col justify-between shadow-lg hover:border-indigo-500/50 transition">
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center">
+                        <span class="text-amber-400 text-sm tracking-widest">★★★★★</span>
+                        <span class="text-xs text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded">مشتری تاییدشده ✓</span>
+                    </div>
+                    <p class="text-slate-200 text-sm leading-relaxed">
+                        «بعد از انتقال پلتفرم آموزشی خودمان به سرورهای ابروان، سرعت لود صفحات دو برابر شد و در زمان برگزاری آزمون‌های آنلاین همزمان، هیچ قطعی یا کندی نداشتیم.»
+                    </p>
+                </div>
+                <div class="flex items-center gap-3 mt-6 pt-4 border-t border-slate-800">
+                    <img src="https://ui-avatars.com/api/?name=Sara+Mohammadi&background=6366f1&color=fff&rounded=true&bold=true" alt="سارا محمدی" class="w-11 h-11 rounded-full">
+                    <div>
+                        <div class="text-sm font-bold text-white">سارا محمدی</div>
+                        <div class="text-xs text-indigo-400">مدیر فنی استارتاپ لرن‌تک</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- نظر ۲ -->
+            <div class="bg-slate-900 border border-slate-700/80 p-6 rounded-2xl flex flex-col justify-between shadow-lg hover:border-indigo-500/50 transition">
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center">
+                        <span class="text-amber-400 text-sm tracking-widest">★★★★★</span>
+                        <span class="text-xs text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded">مشتری تاییدشده ✓</span>
+                    </div>
+                    <p class="text-slate-200 text-sm leading-relaxed">
+                        «پشتیبانی فنی فوق‌العاده سریع و پنل مدیریت بسیار ساده‌ای دارند. راه‌اندازی پروژه لاراول و دیتابیس MySQL ما روی این سرورها کمتر از ۱۰ دقیقه زمان برد.»
+                    </p>
+                </div>
+                <div class="flex items-center gap-3 mt-6 pt-4 border-t border-slate-800">
+                    <img src="https://ui-avatars.com/api/?name=Kaveh+Rezaei&background=0ea5e9&color=fff&rounded=true&bold=true" alt="کاوه رضایی" class="w-11 h-11 rounded-full">
+                    <div>
+                        <div class="text-sm font-bold text-white">کاوه رضایی</div>
+                        <div class="text-xs text-indigo-400">توسعه‌دهنده ارشد بک‌اند</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- نظر ۳ -->
+            <div class="bg-slate-900 border border-slate-700/80 p-6 rounded-2xl flex flex-col justify-between shadow-lg hover:border-indigo-500/50 transition">
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center">
+                        <span class="text-amber-400 text-sm tracking-widest">★★★★★</span>
+                        <span class="text-xs text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded">مشتری تاییدشده ✓</span>
+                    </div>
+                    <p class="text-slate-200 text-sm leading-relaxed">
+                        «سیستم بکاپ‌گیری خودکار و فایروال ضد DDoS ابروان خیال ما را از بابت امنیت داده‌های فروشگاه اینترنتی‌مان در جشنواره‌های فروش کاملاً راحت کرده است.»
+                    </p>
+                </div>
+                <div class="flex items-center gap-3 mt-6 pt-4 border-t border-slate-800">
+                    <img src="https://ui-avatars.com/api/?name=Mehdi+Ahmadi&background=10b981&color=fff&rounded=true&bold=true" alt="مهدی احمدی" class="w-11 h-11 rounded-full">
+                    <div>
+                        <div class="text-sm font-bold text-white">مهدی احمدی</div>
+                        <div class="text-xs text-indigo-400">هم‌بنیان‌گذار دیجی‌استور</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- بخش فرم رزرو مشاوره و سفارش -->
+    <section id="booking" class="max-w-3xl mx-auto px-6 py-16">
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 shadow-xl">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl font-bold">درخواست مشاوره رایگان و راه‌اندازی سرویس</h2>
+                <p class="text-slate-400 text-sm mt-2">مشخصات خود را وارد کنید تا کارشناسان ما ظرف ۱۵ دقیقه با شما تماس بگیرند</p>
+            </div>
+
+            <form id="consultForm" onsubmit="submitForm(event)" class="space-y-5">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div>
+                        <label class="block text-xs text-slate-300 mb-2">نام و نام خانوادگی *</label>
+                        <input type="text" id="name" required placeholder="مثلاً: علی کریمی" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-indigo-500 transition">
+                    </div>
+                    <div>
+                        <label class="block text-xs text-slate-300 mb-2">شماره موبایل *</label>
+                        <input type="tel" id="phone" required placeholder="0912XXXXXXX" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-indigo-500 transition">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs text-slate-300 mb-2">پلن مورد نظر</label>
+                    <select id="plan" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-indigo-500 transition">
+                        <option value="pro">پلن تجاری پرو (پیشنهادی)</option>
+                        <option value="startup">پلن استارتاپ</option>
+                        <option value="vip">پلن سازمانی VIP</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full py-3.5 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-xl shadow-lg shadow-indigo-600/20 transition">
+                    ثبت درخواست و دریافت تماس مشاور
+                </button>
+            </form>
+
+            <!-- پیام موفقیت بعد از ارسال فرم -->
+            <div id="successMsg" class="hidden mt-6 p-4 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 rounded-xl text-sm text-center">
+                ✓ درخواست شما با موفقیت ثبت شد! در نسخه بک‌اند (Laravel)، این اطلاعات در دیتابیس ذخیره شده و پیامک تایید برایتان ارسال می‌گردد.
+            </div>
+        </div>
+    </section>
+
+    <!-- فوتر -->
+    <footer class="border-t border-slate-900 bg-slate-950 py-8 text-center text-xs text-slate-500">
+        <p>این صفحه یک نمونه کار فرانت‌اند (HTML + Tailwind CSS + JS) از پورتفولیوی <strong>امیرحسین رحمتی</strong> است.</p>
+    </footer>
+
+    <script>
+        // تغییر قیمت ماهانه و سالانه
+        function setBilling(type) {
+            const btnMonthly = document.getElementById('btn-monthly');
+            const btnYearly = document.getElementById('btn-yearly');
+            const p1 = document.getElementById('price-1');
+            const p2 = document.getElementById('price-2');
+            const p3 = document.getElementById('price-3');
+
+            if (type === 'yearly') {
+                btnYearly.classList.add('bg-indigo-600', 'text-white');
+                btnYearly.classList.remove('text-slate-400');
+                btnMonthly.classList.remove('bg-indigo-600', 'text-white');
+                btnMonthly.classList.add('text-slate-400');
+                
+                p1.textContent = '۲۳۰,۰۰۰';
+                p2.textContent = '۵۲۰,۰۰۰';
+                p3.textContent = '۱,۱۲۰,۰۰۰';
+            } else {
+                btnMonthly.classList.add('bg-indigo-600', 'text-white');
+                btnMonthly.classList.remove('text-slate-400');
+                btnYearly.classList.remove('bg-indigo-600', 'text-white');
+                btnYearly.classList.add('text-slate-400');
+
+                p1.textContent = '۲۹۰,۰۰۰';
+                p2.textContent = '۶۵۰,۰۰۰';
+                p3.textContent = '۱,۴۰۰,۰۰۰';
+            }
+        }
+
+        // مدیریت ارسال فرم
+        function submitForm(e) {
+            e.preventDefault();
+            const msg = document.getElementById('successMsg');
+            msg.classList.remove('hidden');
+            document.getElementById('consultForm').reset();
+        }
+    </script>
+</body>
+</html>
